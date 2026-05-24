@@ -9,7 +9,7 @@ export const authService = {
   async login(payload: LoginPayload) {
 
     const response = await api.post(
-      "/auth/login/",
+      "/auth/login",
       payload
     );
 
@@ -17,6 +17,6 @@ export const authService = {
   },
 
   logout: async () => {
-  return api.post("auth/logout/");
+  return api.post("auth/logout");
 },
 };
